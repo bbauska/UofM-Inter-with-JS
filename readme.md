@@ -99,7 +99,7 @@ responsive design and completing a capstone project.
 
 <h2><a href=#syllabus">Syllabus</a></h2>
 
-<h3>Week One: Data Types</h3>
+<h3 id="week-1">Week One: Data Types</h3>
 
 If you haven&apos;t used a traditional programming language before, this
 first week is key. Before we begin with the how, we will talk about the
