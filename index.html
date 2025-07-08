@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ index.html of uofm-inter-with-javascript (01) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ inter-js.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ index.html of bbauska/UofM-Inter-with-JS (01) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ making inter-with-js.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
@@ -26,7 +26,7 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <link rel="canonical" href="https://inter-js.bauska.org/" />
-<!--~~~~~~~~~~~~~~~~~~~~~~ index.html of uofm-inter-with-javascript (01) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of uofm-inter-with-js (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" >
   <meta name="title" content="University of Michigan's Interactivity with JavaScript">
   <meta name="description" content="University of Michigan: Interactivity with JavaScript. 
@@ -36,7 +36,8 @@
     If you don't, you're really going to want to go back and review those two areas
     because everything with JavaScript in this class is based on web programming." >
   <meta name="keywords" content="University of Michigan's Interactivity with JavaScript, 
-    UofM's Interactivity, UofM, JavaScript, JS, Interactivity, Michigan, University, Web" />
+    UofM's Interactivity,UofM,JavaScript,JS,Interactivity,Michigan, University,Web,
+	Silus,Gaming,World,Silus Gaming World" />
   <meta name="robot" content="index, follow">
   <title>UofM's Interactivity with JS</title>
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
@@ -61,9 +62,9 @@
       mybutton.style.display = "none";
     }
   }
-// when the user clicks on the button, scroll to the table of contents near top of document.
+  // when the user clicks on the button, scroll to the table of contents near top of document.
   function topFunction() {
-    document.getElementById('table-of-contents').scrollIntoView();
+    document.getElementById('toc').scrollIntoView();
   }
 </script>
 <header id="title-block-header">
@@ -108,7 +109,7 @@ understanding of HTML and CSS is expected when you enroll in this class. Additio
 courses focus on enhancing the styling with responsive design and completing a capstone 
 project.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="table-of-contents"><a href="#table-of-contents">Table of Contents - UofM Interactivity w/JS</a></h2>
+<h2 id="toc">Table of Contents - UofM Interactivity w/JS</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2><a href="#ch1"><strong>Week 1: Data Types (The Basics - HTML structure, JS syntax, and creating output)</strong></a></h2>
 
@@ -269,10 +270,10 @@ to get information from the user, and then store it so you can use it later.</p>
   alt="Decision Points: use control statements."
   style="width:40%" >
 
-<p>We're also going to add decision points. Things are much more interesting when 
-they don't do the same thing every single time. We're going to write a little bit 
-of code that can help the program decide in some cases I want to do this and in 
-other cases, I want to do that. We call this decision points.</p>
+<p>We're also going to add decision points. Things are much more interesting when they 
+don't do the same thing every single time. We're going to write a little bit of code that 
+can help the program decide in some cases I want to do this and in other cases, I want to 
+do that. We call this decision points.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08. looping, #1 (08) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="border displayed"
@@ -583,18 +584,17 @@ document.querySelector() and document.querySelectorAll().</p>
 <ol>
   <li>The getElementById() method is one of the most common methods in the HTML 
     DOM. It is used almost every time you want to read or edit an HTML element. This 
-	method returns an element with a specified ID value. If the page has two elements 
-	with the same id (which it shouldn't!) only the first element in the DOM is returned. 
-	There is no need to include the hashtag in the selector. Sample Code for getElementById 
-	Note, JavaScript is case sensitive so make sure you have Id with an uppercase 
-	"I" and a lowercase "d."</li>
-  <li>While getElementById is only used for elements with a specific id, you 
-    can also return a single element if you use querySelector. The querySelector() 
-	method returns the first child element that matches a specified CSS selector(s) 
-	of an element. You can use it to return the first h1 element (h1), the first 
-	paragraph (p), the first link (a). If you want to search for an id, you must 
-	include the hashtag (#) in the selector. If you want to search for a class you 
-	must include a period (.)</li>
+    method returns an element with a specified ID value. If the page has two elements 
+    with the same id (which it shouldn't!) only the first element in the DOM is returned. 
+    There is no need to include the hashtag in the selector. Sample Code for getElementById 
+    Note, JavaScript is case sensitive so make sure you have Id with an uppercase 
+    "I" and a lowercase "d."</li>
+  <li>While getElementById is only used for elements with a specific id, you can also 
+    return a single element if you use querySelector. The querySelector() method returns 
+    the first child element that matches a specified CSS selector(s) of an element. You 
+    can use it to return the first h1 element (h1), the first paragraph (p), the first 
+    link (a). If you want to search for an id, you must include the hashtag (#) in the 
+    selector. If you want to search for a class you must include a period (.)</li>
 </ol>
 
 <h3>Methods that return a collection of elements</h3>
@@ -609,16 +609,16 @@ will want to use getElements (notice the s at the end) or querySelectorAll.</p>
     tag name. Sample Code for getElementsByTagName.</li>
   <li>The getElementsByClassName() method returns all of the elements with a 
     specified class name(s). There is no need to include the period.  Sample Code 
-	for getElementsByClassName (using one class) and Sample Code for getElementsByClassName 
-	(using multiple classes).</li>
+    for getElementsByClassName (using one class) and Sample Code for getElementsByClassName 
+    (using multiple classes).</li>
   <li>The querySelectorAll() method returns a collection of an element's child 
     elements that match a specified CSS selector(s). When using querySelectorAll 
-	you must include the # if the selector is an id and a period if the selector 
-	is a class. Sample Code for querySelectorAll.</li>
+    you must include the # if the selector is an id and a period if the selector 
+    is a class. Sample Code for querySelectorAll.</li>
 </ol>
 
-<p>Important!  Even if there is just one element that matches the selector, that 
-element is returned as part of an array so you will need to use an index to access it.</p>
+<p>Important!  Even if there is just one element that matches the selector, that element 
+is returned as part of an array so you will need to use an index to access it.</p>
 
 <h3>Using getElement vs querySelector</h3>
 
@@ -717,14 +717,13 @@ online that uses the other approach. Good luck.</p>
 
 <h3>Semicolons</h3>
 
-<p>Adding a semicolon (;) indicates that you have completed a statement. However, 
-unless you are writing multiple statements on the same line, you don't need to add 
-a semicolon.</p>
+<p>Adding a semicolon (;) indicates that you have completed a statement. However, unless 
+you are writing multiple statements on the same line, you don't need to add a semicolon.</p>
 
 <p>During this course you will definitely notice that I am in the habit of adding a 
-semicolon to the end of every line. This is a habit I have because I write in a lot 
-of different programming languages at the same time and the semicolon is required 
-in some and not others.</p>
+semicolon to the end of every line. This is a habit I have because I write in a lot of 
+different programming languages at the same time and the semicolon is required in some 
+and not others.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-03">1.03 Output</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -736,11 +735,10 @@ in some and not others.</p>
   alt="1.03 Output."
   style="width:40%" >
 
-<p>Hi everybody. Today, let's start coding a little bit to see some of
-things we can do with JavaScript. Maybe, using HTML 5 or CSS 3, you've
-added what we call a little bit of interactivity to your page. There's
-the details tag if you're using HTML. There's the hover property or
-pseudo class if you're using CSS 3 and you were able to make little
+<p>Hi everybody. Today, let's start coding a little bit to see some of things we can do 
+with JavaScript. Maybe, using HTML 5 or CSS 3, you've added what we call a little bit of 
+interactivity to your page. There's the details tag if you're using HTML. There's the 
+hover property or pseudo class if you're using CSS 3 and you were able to make little
 things change in your page by reacting to what the user was doing.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 28. interactivity (21) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -751,10 +749,9 @@ things change in your page by reacting to what the user was doing.</p>
   alt="Interactivity"
   style="width:40%" >
 
-<p>But typically, that's not really what we call interactivity when
-we're talking about true web design because these new elements and the
-pseudo classes can only go so far. They tend to be temporary
-changes.</p>
+<p>But typically, that's not really what we call interactivity when we're talking about 
+true web design because these new elements and the pseudo classes can only go so far. 
+They tend to be temporary changes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 29. what can javascript do? (21) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="border displayed"
@@ -764,17 +761,15 @@ changes.</p>
   alt="What can JavaScript do?"
   style="width:40%" >
 
-<p>So, what can JavaScript do that HTML and CSS can't do? Well, the one
-that I'm going to talk about today is that they can read and write HTML
-elements. Now that's not the only thing they can do. We're going to be
-talking about different things like reacting to events and validating
-data and different things like that. But today, we're really going to
-focus on output.</p>
+<p>So, what can JavaScript do that HTML and CSS can't do? Well, the one that I'm going to 
+talk about today is that they can read and write HTML elements. Now that's not the only 
+thing they can do. We're going to be talking about different things like reacting to 
+events and validating data and different things like that. But today, we're really going 
+to focus on output.</p>
 
-<p>Whenever you learn a new programming language, one of the first
-things you want to do is find out how can I make things happen. How can
-I have things print out to the screen or generate some sort of
-output.</p>
+<p>Whenever you learn a new programming language, one of the first things you want to do 
+is find out how can I make things happen. How can I have things print out to the screen 
+or generate some sort of output.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 30. javascript output (22) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="border displayed"
@@ -784,10 +779,9 @@ output.</p>
   alt="JavaScript output."
   style="width:40%" >
 
-<p>Well, JavaScript doesn't have a built-in print function. Instead, you
-have four or five different ways where you can generate different
-things. Data is typically displayed via alerts, prompts,
-<strong>document.write, innertHTML</strong> or reading information
+<p>Well, JavaScript doesn't have a built-in print function. Instead, you have four or 
+five different ways where you can generate different things. Data is typically displayed 
+via alerts, prompts, <strong>document.write, innertHTML</strong> or reading information 
 directly to the console. Let's talk about each one of these.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 31. alert() example (22) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -798,20 +792,18 @@ directly to the console. Let's talk about each one of these.</p>
   alt="alert() example."
   style="width:40%" >
 
-<p>You've all seen alert JavaScript alert boxes. Because many times,
-especially back maybe 10, 15 years ago, when you went to a page, people
-loved to have these little boxes pop up and say hey, welcome. Doing
-things like that. In JavaScript it's pretty easy. You can just use alert
-and then inside you put my message here. A few things just to point out
-right from the beginning.</p>
+<p>You've all seen alert JavaScript alert boxes. Because many times, especially back 
+maybe 10, 15 years ago, when you went to a page, people loved to have these little boxes 
+pop up and say hey, welcome. Doing things like that. In JavaScript it's pretty easy. You 
+can just use alert and then inside you put my message here. A few things just to point 
+out right from the beginning.</p>
 
-<p>Alert is a keyword. In your editor it should change some sort of
-special color. Inside the parentheses, and you need the parentheses,
-both beginning parentheses and end parentheses, is that you're going to
-have some sort of string and it should be inside quotes. It can be
-inside single quotes or double quotes. And then, the last thing is, to
-end in a semicolon. If you were to put this code right here inside your
-HTML, you can generate some output.</p>
+<p>Alert is a keyword. In your editor it should change some sort of special color. Inside 
+the parentheses, and you need the parentheses, both beginning parentheses and end 
+parentheses, is that you're going to have some sort of string and it should be inside 
+quotes. It can be inside single quotes or double quotes. And then, the last thing is, to 
+end in a semicolon. If you were to put this code right here inside your HTML, you can 
+generate some output.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 32. html, script, noscript (23) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="border displayed"
@@ -821,11 +813,10 @@ HTML, you can generate some output.</p>
   alt="HTML alert example in script and noscript."
   style="width:40%" >
 
-<p>Let me show you an example. What I've done over here is I've created
-the HTML that I would need to generate an alert box. I've got my body
-tag, now this is new I have what we call is a script tag. The script tag
-tells the browser, oh wait, don't just print this out, I'm actually
-going to give you some JavaScript that I want you to run. And in this
+<p>Let me show you an example. What I've done over here is I've created the HTML that I 
+would need to generate an alert box. I've got my body tag, now this is new I have what we 
+call is a script tag. The script tag tells the browser, oh wait, don't just print this 
+out, I'm actually going to give you some JavaScript that I want you to run. And in this
 case, I have my code alert("Hello World").</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 33. pop-up alert box (23) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2480,9 +2471,8 @@ windows.</p>
   alt="CodePen Example, #2."
   style="width:40%" >
 
-<p>If you're not too concerned with your CSS right now, you can make
-that smaller. And really kind of focus, on what you're working on, in
-the HTML and the JS.</p>
+<p>If you're not too concerned with your CSS right now, you can make that smaller. And 
+really kind of focus, on what you're working on, in the HTML and the JS.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 121. review (2.02. code placement (73) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="border displayed"
@@ -2492,37 +2482,33 @@ the HTML and the JS.</p>
   alt="2.02 Review: Code Placement."
   style="width:40%" >
 
-<p>All right, let's review what we talked about today. The first thing,
-is that you need to feel comfortable with the idea that your JavaScript
-code can appear in the head. Or the body of your code, or very often in
-both. Code, can also be placed in an external JavaScript file. If you do
-this, just make sure that you've linked the files correctly together,
-otherwise you might have some issues trying to figure out why your code
-isn't working. Luckily, the console can tell you, if it can't find that
-file and it leads you down the right path to fixing your code.</p>
+<p>All right, let's review what we talked about today. The first thing, is that you need 
+to feel comfortable with the idea that your JavaScript code can appear in the head. Or 
+the body of your code, or very often in both. Code, can also be placed in an external 
+JavaScript file. If you do this, just make sure that you've linked the files correctly 
+together, otherwise you might have some issues trying to figure out why your code isn't 
+working. Luckily, the console can tell you, if it can't find that file and it leads 
+you down the right path to fixing your code.</p>
 
-<p>Personally, I always develop in the same file. I tend to have my HTML
-and my JS in the same file, while I'm doing my testing. Once I'm done, I
-move it out into an external style sheet. It's really up to you to
-determine which style you like best. Whether you like your JavaScript in
-the same file or in a separate file. There are benefits to both. And the
-most important thing for you right now, is to develop the confidence
-that you can get your JavaScript working, in whatever way, it best suits
-you. Good luck.</p>
+<p>Personally, I always develop in the same file. I tend to have my HTML and my JS in the 
+same file, while I'm doing my testing. Once I'm done, I move it out into an external style 
+sheet. It's really up to you to determine which style you like best. Whether you like your 
+JavaScript in the same file or in a separate file. There are benefits to both. And the 
+most important thing for you right now, is to develop the confidence that you can get 
+your JavaScript working, in whatever way, it best suits you. Good luck.</p>
 
 <h3>Organizing Your Code</h3>
 
 <h3>Code Placement</h3>
 
-<p>When you write code, it is important to get into the good habits of
-organizing your code. While there are no specific rules about how and
-where to place your code, there are definitely conventions. (Conventions
-are suggestions that most programmers follow. This way other programmers
-can quickly and easily understand their code.)</p>
+<p>When you write code, it is important to get into the good habits of organizing your 
+code. While there are no specific rules about how and where to place your code, there are 
+definitely conventions. (Conventions are suggestions that most programmers follow. This 
+way other programmers can quickly and easily understand their code.)</p>
 
-<p>The most common organization is to have one main folder with your
-HTML files in it. There are also three subfolders (folders inside the
-main folder) for your CSS, image, and JavaScript files.</p>
+<p>The most common organization is to have one main folder with your HTML files in it. 
+There are also three subfolders (folders inside the main folder) for your CSS, image, 
+and JavaScript files.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 122. codepen: separate code (74) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="border displayed"
@@ -2854,7 +2840,7 @@ yet, I really didn't want to use that element, but now we can.</p>
   src="./images/image139.webp"
   loading="lazy"
   title="Call a JavaScript function to display date"
-  alt="Call a JavaScript function to display date."	
+  alt="Call a JavaScript function to display date."    
   style="width:40%" >
 
 <p>What I have here is a simple JavaScript function that says, hey I
@@ -3300,7 +3286,7 @@ did, but I'm not going to.</p>
 this module and bring up some sort of editor code bin, and go in there
 and start coding. If you don't do it now, you might start falling behind
 as we get into these more complex ideas. So, good luck.</p>
-	
+    
 <h3>Just a little note before the next lesson</h3>
 
 <h4>Links to the code to use in the next lesson;</h4>
@@ -5543,7 +5529,8 @@ boards mentoring each other and encouraging each other. Good luck.</p>
   <small>First created 9/15/23 10+ pm</small><br/>
   <small>Prior updated 6/18/24 11+ pm</small><br/>
   <small>Last updated 11/14/24 6+ pm</small><br/>
-  <small>Last updated 11/30/24 4+ pm</small></p>
+  <small>Last updated 11/30/24 4+ pm</small><br/>
+  <small>Last updated 7/8/25 1+ pm</small></p>
 
   </body>
 
